@@ -1,4 +1,7 @@
 PhotolabChallenge::Application.routes.draw do
+  resources :submissions
+
+
   resources :challenges
 
 
