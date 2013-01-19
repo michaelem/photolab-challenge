@@ -21,6 +21,10 @@
     <%= f.text_area :description %>
   </div>
 
+  <div class="field">
+    <%= f.label :challenge_id %>
+    <%= f.collection_select :challenge_id, Challenge.all, :id, :title %>
+
   <div clss="field">
     <%= f.file_field :picture %>
   </div>

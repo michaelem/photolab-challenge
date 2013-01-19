@@ -11,3 +11,16 @@
  *= require_self
  *= require_tree .
  */
+
+.base_box {
+	border: 1px solid grey;
+	box-shadow: 1em 1em 1em silver;
+	margin: 3em;
+	padding: 1em;
+	max-width: 50em;
+}
+
+.center_content {
+	margin: 0 auto;
+	width: 60em;
+}

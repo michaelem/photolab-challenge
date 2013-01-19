@@ -1,20 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @challenge.title %>
-</p>
+<div class="base_box challenge">
+	<div class="edit"><%= link_to 'Edit', edit_challenge_path(@challenge) %></div>
+	<p>
+	  <h1><%= @challenge.title %></h1>
+	  
+	</p>
 
-<p>
-  <b>Description:</b>
-  <%= @challenge.description %>
-</p>
+	<p>
+	  <%= @challenge.description %>
+	</p>
 
-<p>
-  <b>End date:</b>
-  <%= @challenge.end_date %>
-</p>
+	<p>
+	  <b>End date:</b>
+	  <%= @challenge.end_date.strftime("%Y-%m-%d") %>
+	</p>
+
+</div>
+
+<%= render @challenge.submissions %>
 
 
-<%= link_to 'Edit', edit_challenge_path(@challenge) %> |
-<%= link_to 'Back', challenges_path %>
