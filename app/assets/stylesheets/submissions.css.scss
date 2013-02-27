@@ -3,11 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .submission {
-	.username {
-		float: right;
-	}
-
 	img {
 		width: 40em;
+	}
+
+	.description {
+		width: 30em;
+		float: right;
 	}
 }

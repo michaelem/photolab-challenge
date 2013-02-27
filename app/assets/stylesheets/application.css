@@ -14,13 +14,14 @@
 
 .base_box {
 	border: 1px solid grey;
-	box-shadow: 1em 1em 1em silver;
+	box-shadow: 0em 0em 1em silver;
 	margin: 3em;
 	padding: 1em;
-	max-width: 50em;
+	width: 70em;
+	-webkit-background-clip: padding-box;
 }
 
 .center_content {
 	margin: 0 auto;
-	width: 60em;
+	width: 80em;
 }
