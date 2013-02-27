@@ -1,0 +1,15 @@
+<div class="base_box challenge">
+	<h1><%= challenge_preview.title %></h1>
+	
+	<p>
+	  <%= challenge_preview.description %>
+	</p>
+	
+	<p>
+	  <b>End date:</b>
+	  <%= challenge_preview.end_date.strftime("%Y-%m-%d") %>
+	</p>
+
+	<%= link_to "show", challenge_preview %>
+
+</div>
